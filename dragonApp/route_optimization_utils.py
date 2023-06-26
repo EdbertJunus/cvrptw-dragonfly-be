@@ -2,12 +2,14 @@ import numpy as np
 import random
 import pandas as pd
 import os
+from dotenv import load_dotenv
 from scipy.special import gamma
 from itertools import permutations
 import math
 import googlemaps
+load_dotenv()
 
-API_KEY = "AIzaSyBprc78tZm2x1B1GFX9EWTp7L-8MfjwtdI"
+API_KEY = os.environ.get('API_KEY')
 
 
 # Function: Distance Calculations
